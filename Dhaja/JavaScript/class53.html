@@ -1,0 +1,120 @@
+<html>
+<!-- 
+array
+-it is a group of elements of same datatype
+-it is a collection of same type of data
+
+character array -> string
+-->
+
+<script>
+function cal1()
+{
+	var mark1 = document.getElementById("mark1").value;
+    var FullMark1 = document.getElementById("full1").value;
+	var PC = (mark1/FullMark1)*100;
+	document.getElementById("percent1").innerHTML = PC + "%";
+}
+
+function cal2()
+{
+	var mark1 = document.getElementById("mark2").value;
+    var FullMark1 = document.getElementById("full2").value;
+	var PC = (mark1/FullMark1)*100;
+	document.getElementById("percent2").innerHTML = PC + "%";
+}
+function cal3()
+{
+	var mark1 = document.getElementById("mark3").value;
+    var FullMark1 = document.getElementById("full3").value;
+	var PC = (mark1/FullMark1)*100;
+	document.getElementById("percent3").innerHTML = PC + "%";
+}
+
+function overall()
+{
+	var m1 = document.getElementById("mark1").value;
+	var m2 = document.getElementById("mark2").value;
+	var m3 = document.getElementById("mark3").value;
+	if(m1 == "")
+	{
+	 window.alert("Mark 1 field is empty ");
+	}
+		if(m2 == "")
+	{
+	 window.alert("Mark 2 field is empty ");
+	}
+		if(m3 == "")
+	{
+	 window.alert("Mark 3 field is empty ");
+	}
+	
+	 m1 = m1 * 1;
+	 m2 = m2 * 1;
+	 m3 = m3 * 1;
+	var Tot_mark = m1+m2+m3;
+	
+	var FM1 = document.getElementById("full1").value;
+	var FM2 = document.getElementById("full2").value;
+	var FM3 = document.getElementById("full3").value;
+	FM1 = FM1 * 1;
+	FM2 = FM2 * 1;
+	FM3 = FM3 * 1;
+	
+	var Tot_FM = FM1 + FM2 + FM3;
+	
+
+	
+	var PC = (Tot_mark/Tot_FM)*100;
+	
+	document.getElementById("tot_mark").innerHTML = Tot_mark;
+	document.getElementById("tot_full").innerHTML = Tot_FM;
+	document.getElementById("tot_percent").innerHTML = PC + "%";
+}
+
+</script>
+
+<table border = 1 cellpadding = 5px;>
+
+	<tr>
+		<th>Subject</th>
+		<th>Marks</th>
+		<th>Full Mark</th>
+		<th>Percentage</th>
+	</tr>
+	
+	<tr>
+		<td><input type = "text" id = "subject1"></td>
+		<td><input type = "text" id = "mark1"></td>
+		<td><input type = "text" id = "full1"></td>
+		<td><p id = "percent1">Percentage </p></td>
+		<td><button type = "button" onclick = "cal1()">calculate</button></td>
+	</tr>
+	
+	<tr>
+		<td><input type = "text" id = "subject2"></td>
+		<td><input type = "text" id = "mark2"></td>
+		<td><input type = "text" id = "full2"></td>
+		<td><p id = "percent2">Percentage </p></td>
+				<td><button type = "button" onclick = "cal2()">calculate</button></td>
+	</tr>
+	
+	<tr>
+		<td><input type = "text" id = "subject3"></td>
+		<td><input type = "text" id = "mark3"></td>
+		<td><input type = "text" id = "full3"></td>
+		<td><p id = "percent3">Percentage </p></td>
+				<td><button type = "button" onclick = "cal3()">calculate</button></td>
+	</tr>
+	<tr>
+		<td><p >Grand Total</p></td>
+		<td><p id = "tot_mark"></p> </td>
+		<td><p id = "tot_full"></p> </td>
+		<td><p id = "tot_percent">Percentage </p></td>
+				<td><button type = "button" onclick = "overall()">Overall</button></td>
+	</tr>
+</table>
+
+ </html>
+
+

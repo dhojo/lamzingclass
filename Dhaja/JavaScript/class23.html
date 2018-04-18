@@ -1,0 +1,36 @@
+<html>
+ <script>
+ 
+ function check(){
+	 var a = document.getElementById("num1").value;
+	 var b = document.getElementById("num2").value;
+	 var c = document.getElementById("num3").value;
+	 a = a*1;
+	 b = b*1;
+	 c = c*1;
+	 if (a>b)
+	  {
+	    if (a > c)
+			{ document.getElementById("dis").innerHTML = "A is the Biggest" }
+		else
+			{ document.getElementById("dis").innerHTML = "C is the Biggest" }
+	  }
+	else
+	 {
+	    if (b > c)
+			{ document.getElementById("dis").innerHTML = "B is the Biggest" }
+		else
+			{ document.getElementById("dis").innerHTML = "C is the Biggest" }
+	   
+	 }  
+	 
+	 
+ }
+ </script>
+ A<input type = "text" id = "num1">  B<input type = "text" id = "num2"> C<input type = "text" id = "num3">
+ <button type = "button" onclick = "check()">check</button>
+ <p id = "dis">---</p>
+ 
+</html>
+
+

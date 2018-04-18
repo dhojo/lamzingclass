@@ -1,0 +1,33 @@
+<html>
+
+<style>
+	.style1{
+	background-color:grey;
+	color:white;
+	width:200px;
+	height: 100px;
+	padding:10px;
+	position: absolute;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){ 
+	
+	$(".btn").click(function(){
+		$(".style1").animate({left:'250px'});
+	})
+
+	
+	})
+</script>
+
+
+<button class = "btn">show</button>
+<div class = "style1"> </div>
+
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+ <script>
+ 
+ function check(){
+	 var a = document.getElementById("num1").value;
+	  a = a*1;
+	
+	 if (a >= 75)
+	  {
+	   document.getElementById("dis").innerHTML = "A";
+	  }
+	 else if(a >= 60)
+	  {
+	   document.getElementById("dis").innerHTML = "B";
+	  }
+	   else if(a >= 45)
+	  {
+	   document.getElementById("dis").innerHTML = "C";
+	  }
+	   else if(a >= 30)
+	  {
+	   document.getElementById("dis").innerHTML = "D";
+	  }
+	  else 
+	  {
+	   document.getElementById("dis").innerHTML = "Fail F";
+	  }
+ }
+ </script>
+ <table border = 1>
+	 <tr>
+		<th>Percentage</th>
+		<th>Grade</th>
+	 </tr>
+	 <tr>
+		<td>75 and above</td>
+		<td>A</td>
+	 </tr>
+	 <tr>
+		<td>60 and less than 75</td>
+		<td>B</td>
+	 </tr>
+	 <tr>
+		<td>45 and less than 60(45<=C<60)</td>
+		<td>C</td>
+	 </tr>
+	 <tr>
+		<td>30 and less than 45</td>
+		<td>D</td>
+	 </tr>
+	 <tr>
+		<td>less than 30</td>
+		<td>F</td>
+	 </tr>
+ </table>
+ <input type = "text" id = "num1" placeholder = "enter your marks here"> 
+  <button type = "button" onclick = "check()">check</button>
+ <p id = "dis">---</p>
+ 
+</html>
+
+

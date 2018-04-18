@@ -1,0 +1,91 @@
+<html>
+
+<style>
+	.style1{
+	background-color:grey;
+	color:white;
+	text-align:center;
+	}
+	
+	#imagecontainer{
+	color:white;
+	text-align:center;
+	height:170px;
+	padding:10px;
+	}
+	
+	img{
+	position: relative;
+	height:150px;
+	width:150px;
+	margin-right:10px;
+	float:left;
+	}
+	
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){   
+$("#imagecontainer").hide();
+
+ $("#imageshow").click(function(){
+ 
+	$("#imagecontainer").slideToggle();
+	$(".img1").animate({height:'150px',width:'150px'});
+	$(".img2").animate({height:'150px',width:'150px'});
+	$(".img3").animate({height:'150px',width:'150px'});
+	$("#imagecontainer").animate({height:'170px'});
+	
+ })
+ 
+$(".img1").click(function(){
+ 
+	$(".img1").animate({height:'250px',width:'250px'});
+	$(".img2").animate({height:'150px',width:'150px'});
+	$(".img3").animate({height:'150px',width:'150px'});
+	$("#imagecontainer").animate({width:'700px',height:'300px'});	
+})
+
+
+$(".img2").click(function(){
+ 
+	$(".img2").animate({height:'250px',width:'250px'});
+	$(".img1").animate({height:'150px',width:'150px'});
+	$(".img3").animate({height:'150px',width:'150px'});
+	$("#imagecontainer").animate({width:'700px',height:'300px'});	
+})
+
+$(".img3").click(function(){
+ 
+	$(".img3").animate({height:'250px',width:'250px'});
+	$(".img1").animate({height:'150px',width:'150px'});
+	$(".img2").animate({height:'150px',width:'150px'});
+	$("#imagecontainer").animate({width:'700px',height:'300px'});	
+})
+
+
+
+ 
+ 
+ 
+ })
+</script>
+
+<div class = "style1">
+	<div id = "imageshow">
+		Click here for photos
+	</div>
+	
+	<div id = "imagecontainer">
+		<img class = "img1" src = "ocean.jpg">
+		<img class = "img2" src = "ocean1.jpg">
+		<img class = "img3" src = "ocean2.jpg">
+	</div>
+</div>	
+
+
+
+</html>

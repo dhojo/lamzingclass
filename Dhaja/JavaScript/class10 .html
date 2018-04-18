@@ -1,0 +1,21 @@
+<html>
+ <script>
+ function add(){
+ var a,b;												// declaring a and b as variables
+ a = document.getElementById("val1").value;				// assigning the value  of element with id = "val1" to a
+ b = document.getElementById("val2").value;				// assigning the value  of element with id = "val2" to b
+ a = a*1;												// multiplying a with 1 to convert it to numerical from text
+ b = b*1;
+ document.getElementById("dis").innerHTML = a/b;		//assigning the value of a/b as an innerHTML of paragrap with id = "dis"
+  
+ }
+ 
+ </script>
+ 
+ 
+
+ <input type = "text" id = "val1" > / <input type = "text" id = "val2">
+ <button type = "button" onclick = "add()">=</button>
+ 
+ <span id = "dis" style = "border: solid 2px red; height: 15px; width:10px;">---</span>
+</html

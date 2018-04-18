@@ -1,0 +1,25 @@
+.style1
+{
+height: 350px;
+width:250px;
+box-shadow: 4px 4px 4px grey;
+padding:20px;
+float:right;
+margin-left:10px;
+margin-bottom:10px;
+}
+
+img
+{
+height : 240px;
+width : 240px;
+}
+
+
+p
+{
+background-color: yellow;
+color: blue;
+border-radius: 25px;
+text-align: center;
+}

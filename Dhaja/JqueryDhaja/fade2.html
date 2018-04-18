@@ -1,0 +1,62 @@
+<html>
+
+<style>
+	.style1{
+	width:100px;
+	height:100px;
+	padding:10px;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){   
+
+	
+ 
+	$(".btn1").click(function(){
+		$('#div1').fadeIn(100);
+		$('#div2').fadeIn(500);
+		$('#div3').fadeIn(1000);
+		$('#div4').fadeIn(2000);
+		$('#div5').fadeIn(3000);
+	
+	})
+	
+	
+	$(".btn2").click(function(){
+		$('#div1').fadeOut(3000);
+		$('#div2').fadeOut(2000);
+		$('#div3').fadeOut(1000);
+		$('#div4').fadeOut(500);
+		$('#div5').fadeOut(100);
+	
+	})
+ 
+
+ })
+</script>
+
+
+<button class = "btn1">FaadeIN</button>
+<button class = "btn2">FadeOut</button>
+<div class = "style1" style = "background-color:red;" id = "div1">
+
+</div>
+
+<div class = "style1" style = "background-color:blue;" id = "div2">
+
+</div>
+<div class = "style1" style = "background-color:green;" id = "div3">
+
+</div>
+<div class = "style1" style = "background-color:yellow;" id = "div4">
+
+</div>
+<div class = "style1" style = "background-color:cyan;" id = "div5">
+
+</div>
+
+</html>

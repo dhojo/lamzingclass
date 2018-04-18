@@ -1,0 +1,44 @@
+<html>
+
+<style>
+	.style1{
+	background-color:grey;
+	color:white;
+	width:50%;
+	padding:10px 10px 1px;
+	text-align:center;
+	}
+	
+	.style2{
+	background-color:grey;
+	color:white;
+	width:50%;
+	height:200px;
+	padding:10px;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){   
+
+	$('.style2').hide();
+ 
+	$(".style1").click(function(){
+		$('.style2').slideToggle("slow");
+	
+	})
+	
+
+ })
+</script>
+
+
+
+
+<div class = "style1"> Click here to read more<br><hr></div>
+<div class = "style2"> Click here to read more Click here to read moreClick here to read moreClick here to read moreClick here to read moreClick here to read more</div>
+
+</html>

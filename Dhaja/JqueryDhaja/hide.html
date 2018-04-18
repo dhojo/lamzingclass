@@ -1,0 +1,38 @@
+<html>
+
+<style>
+	p{
+	background-color:grey;
+	color:white;
+	width:200;
+	padding:10px;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){ 
+	
+	$("p").click(function(){
+	
+	$("p").hide();
+	
+	})
+	
+	
+	$(".btn").click(function(){
+	$("p").toggle();
+	})
+	
+	
+	})
+</script>
+
+
+<button class = "btn">show</button>
+<p>click me to hide </p>
+
+
+</html>

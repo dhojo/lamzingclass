@@ -1,0 +1,28 @@
+.style1
+{
+height: 350px;
+width:250px;
+box-shadow: 1px 1px 4px grey;
+padding:10px;
+float:left;
+margin-left:10px;
+margin-bottom:10px;
+}
+h3{
+text-align:center;
+}
+
+img
+{
+height : 240px;
+width : 240px;
+}
+
+
+p
+{
+background-color: grey;
+color: white;
+border-radius: 25px;
+text-align: center;
+}

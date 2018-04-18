@@ -1,0 +1,42 @@
+<html>
+ <script>
+ //for loop
+ //while loop
+ // program to print either odd or even numbers
+ 
+function odd()
+	{
+	var a = 1;
+    var range = document.getElementById("num1").value;
+	range = range*1;
+	while(a<=range)
+	 {
+	  if(a%2 == 1)
+	   {
+		document.write(a +" ");
+	   }
+		a+=1;
+	 }
+	}
+
+function even()
+	{
+	var a = 1;
+    var range = document.getElementById("num1").value;
+	range = range*1;
+	while(a<=range)
+	 {
+	  if(a%2 == 0)
+	   {
+		document.write(a +" ");
+	   }
+		a+=1;
+	 }
+	}
+ </script>
+ <input type = "text" id = "num1"><br>
+ <button type = "button" onclick = "even()">Even </button>
+ <button type = "button" onclick = "odd()">Odd </button>
+</html>
+
+

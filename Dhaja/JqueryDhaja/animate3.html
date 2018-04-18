@@ -1,0 +1,43 @@
+<html>
+
+<style>
+	.style1{
+	background-color:grey;
+	color:white;
+	width:200px;
+	height: 500px;
+	padding:10px;
+	position: absolute;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){ 
+	
+	$(".style1").hover(function(){
+	var div1 = ".style1";
+	$(div1).animate({left: '0px'},"slow");
+	})
+
+	$(".btn1").click(function(){
+	var div1 = ".style1";
+	//$(div1).animate({width: '0px'},"slow");
+	$(div1).animate({left: '-195px'});
+	})
+	
+	
+	
+	})
+</script>
+
+
+<button class = "btn1"><<</button>
+
+<div class = "style1"></div>
+
+
+
+</html>

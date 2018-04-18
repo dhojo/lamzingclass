@@ -1,0 +1,8 @@
+
+1. hide()/show()/toggle().
+
+2. slideDown(speed)/slideUp()/slideToggle()
+
+3. fadeIn()/fadeOut()/fadeToggle()
+
+4. animate()

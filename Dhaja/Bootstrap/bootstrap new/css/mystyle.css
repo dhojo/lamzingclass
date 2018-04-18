@@ -1,0 +1,44 @@
+.custab{
+width:100%;
+}
+
+.custab td,.custab th{
+padding:10px;
+}
+
+.display-5 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-7 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+
+}
+
+.text-cust1
+{
+	color:#49698A;
+}
+
+.text-cust2
+{
+	color:#508FCF;
+}
+
+.abbr1 {
+  
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}

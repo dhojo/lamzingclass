@@ -1,0 +1,46 @@
+<html>
+ <script>
+ var b,a;												//declaring a and b as global variable (local variable/ global variable)
+ function add(n){										// function add()
+   a = document.getElementById("val1").value;			// assigning the value  of element with id = "val1" to a
+ document.getElementById("val1").value = a+n;			// assigning the value of a+n(concatenate the text of a and n[here n is a value passed from the funcction call]) as an innerHTML of paragrap with id = "dis"
+  
+ }
+ function clear1()
+ {
+	document.getElementById("val1").value = "";			// assigning a blank filed as the value of the text field with id = "val1" [here it is used to clear the screen]
+ }
+ 
+  function sum()
+ {
+	b = document.getElementById("val1").value ;			// assigning the value  of element with id = "val1" to b
+	document.getElementById("val1").value = "";			// assigning a blank filed as the value of the text field with id = "val1" [here it is used to clear the screen]
+ }
+ 
+   function res()
+ {
+    a = document.getElementById("val1").value;			//  assigning the value  of element with id = "val1" to a
+	a = a*1;											// multiplying a with 1 to convert it into numerical
+	b = b*1;													
+	document.getElementById("val1").value = b+a;		// assigning the sum of b and a as a value for the text field with id = "val1"
+ }
+ </script>
+ 
+ 
+
+ <input type = "text" id = "val1" ><br>
+ <button type = "button" onclick = "add(1)">1</button>    <!-- function add() is called and value 1 is passed-->
+ <button type = "button" onclick = "add(2)">2</button>
+ <button type = "button" onclick = "add(3)">3</button><br>
+ <button type = "button" onclick = "add(4)">4</button>
+ <button type = "button" onclick = "add(5)">5</button>
+ <button type = "button" onclick = "add(6)">6</button><br>
+ <button type = "button" onclick = "add(7)">7</button>
+ <button type = "button" onclick = "add(8)">8</button>
+ <button type = "button" onclick = "add(9)">9</button><br>
+ <button type = "button" onclick = "add(0)">0</button>
+ <button type = "button" onclick = "clear1()">C</button>
+ <button type = "button" onclick = "sum()">+</button>
+  <button type = "button" onclick = "res()">=</button>
+ 
+</html

@@ -1,0 +1,45 @@
+<html>
+ <script>
+	function create_table(){
+	var i;
+	var t_name = document.getElementById("tabname").value;
+	var row = document.getElementById("row_no").value;
+	var data = document.getElementById("data_no").value;
+	
+	document.write("<h3 align = center>"+t_name+"</h3>");
+	document.write("<table border = 1 align = center>");
+	
+	
+	for(i = 1; i<= row; i++)
+	{
+	document.write("<tr>");
+		for(j = 1; j<= data; j++)
+		{
+		 document.write("<td>hello</td>");
+		}
+	document.write("</tr>");
+	}
+	
+	
+	
+	
+	document.write("</table>");
+	}
+	
+	
+	
+	
+	
+ </script>
+
+ Name of the Table: <input type = "text" id = "tabname"><br>
+ No.of Rows: <input type = "text" id = "row_no"><br>
+ No.of Data: <input type = "text" id = "data_no"><br>
+ <button type = "button" onclick = "create_table()">Create</button>
+
+<tr>
+
+</tr>
+ </html>
+
+

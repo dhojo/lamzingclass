@@ -1,0 +1,55 @@
+<html>
+ <style>
+ table
+ {
+  border-collapse:collapse;
+  border:solid 2px blue;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ }
+ tr:nth-child(even){background-color: lightblue;}
+ 
+ td{
+ padding:10px;
+ }
+ .cla2{
+ background-color: red;
+ color:white;
+ }
+ </style>
+ <script>
+ //for loop
+ 
+ 
+ 
+
+	var i;
+   var z;
+   a = "2 x ";
+   b = " = ";
+   document.write("<table>");
+    for(i = 1; i<=100 ; i++)
+	{
+	    z = 2*i;
+		if(i%10 == 0)
+		{
+		document.write("<tr><td class = 'cla2'>")
+		document.write(a + i + b + z );
+		//document.write("<br>")
+		document.write("</td></tr>")
+		}
+		else
+		{
+		document.write("<tr><td>")
+		document.write(a + i + b + z );
+		//document.write("<br>")
+		document.write("</td></tr>")
+		}
+	}
+	 document.write("</table>");
+
+
+ </script>
+
+</html>
+
+

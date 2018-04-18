@@ -1,0 +1,40 @@
+<html>
+
+<style>
+	.style1{
+	background-color:grey;
+	color:white;
+	width:200;
+	padding:10px;
+	}
+</style>
+
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){   
+
+	$('.style1').hide();
+ 
+	$(".btn1").click(function(){
+		$('.style1').fadeIn("slow");
+	
+	})
+	
+	$(".btn2").click(function(){
+		$('.style1').fadeOut("slow");
+	
+	})
+ 
+
+ })
+</script>
+
+
+<button class = "btn1">Down</button>
+<button class = "btn2">Up</button>
+<p class = "style1">click me to hide </p>
+
+
+</html>

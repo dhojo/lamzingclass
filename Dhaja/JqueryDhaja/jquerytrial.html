@@ -1,0 +1,65 @@
+<html>
+
+<script src = "js/jquery.js">
+</script>
+	
+<script> 
+	$(document).ready(function(){
+	 $(".btn2").hide();
+    $(".btn1").click(function()
+	{
+        $(".btn2").slideToggle();
+    }  );
+  
+      $(".img1").click(function(){
+        $(".img1").animate({left: '0px',height: '250px',width: '250px' });
+		 $(".img2").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".img3").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".btn2").animate({left: '0px',height: '300px',width: '800px' });
+      });
+  
+       $(".img2").click(function(){
+        $(".img2").animate({left: '0px',height: '250px',width: '250px' });
+		 $(".img1").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".img3").animate({left: '0px',height: '150px',width: '150px' });
+		   $(".btn2").animate({left: '0px',height: '300px',width: '800px' });
+      });
+	
+	    $(".img3").click(function(){
+        $(".img3").animate({left: '0px',height: '250px',width: '250px' });
+		 $(".img1").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".img2").animate({left: '0px',height: '150px',width: '150px' });
+		   $(".btn2").animate({left: '0px',height: '300px',width: '800px' });
+      });
+	  
+	   $(".btn2").click(function()
+	{
+       $(".img3").animate({left: '0px',height: '150px',width: '150px' });
+		 $(".img1").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".img2").animate({left: '0px',height: '150px',width: '150px' });
+		  $(".btn2").animate({left: '0px',height: '180px',width: '600px' });
+    }  );
+	  
+    });
+	
+	
+	
+	
+</script>
+
+<div class = "btn1" style="background-color:#003300; color:white; height:20px; width:600px; text-align:center;"><h3>Some Photos </h3></div>
+<div class = "btn2" style="background-color:#003300; color:white;  height:180px; width:600px; padding-top:30px;">
+	<div  style = "float:left;padding:10px;">
+		<img class = "img1" style="position:relative;" src = "ocean.jpg" height = 150px width = 150px>
+	</div>
+	<div  style = "float:left; padding:10px;position:relative;">
+		<img class = "img2" style="position:relative;"src = "ocean1.jpg" height = 150px width = 150px>
+	</div>
+	<div  style = "float:left; padding:10px;position:relative;">
+		<img class = "img3" style="position:relative;" src = "ocean2.jpg" height = 150px width = 150px>
+	</div>
+	
+	
+</div>
+
+</html>

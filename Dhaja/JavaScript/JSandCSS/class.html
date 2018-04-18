@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Changing CSS</title>
+        <link rel="stylesheet" type="text/css" href="mystyle1.css"/>
+    </head>
+
+<script>
+function changeCSS(cssFile, cssLinkIndex)
+ {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+     
+	
+	
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+
+</script>
+<header>
+<button type = "button" onclick = "changeCSS('mystyle1.css',0)">StyleSheet1</button>
+<button type = "button" onclick = "changeCSS('mystyle2.css',0)">StyleSheet2</button>
+<button type = "button" onclick = "changeCSS('mystyle3.css',0)">StyleSheet3</button>
+</header>
+
+<div class = 'style1'>
+	<img src = '1.jpg'>
+	<h3>Planet</h3>
+	<p>Paragraph of the Planets</p>
+</div>
+
+<div class = 'style1'>
+	<img src = '1.jpg'>
+	<h3>Planet</h3>
+	<p>Paragraph of the Planets</p>
+</div>
+
+<div class = 'style1'>
+	<img src = '1.jpg'>
+	<h3>Planet</h3>
+	<p>Paragraph of the Planets</p>
+</div>
+
+<div class = 'style1'>
+	<img src = '1.jpg'>
+	<h3>Planet</h3>
+	<p>Paragraph of the Planets</p>
+</div>
+
+<div class = 'style1'>
+	<img src = '1.jpg'>
+	<h3>Planet</h3>
+	<p>Paragraph of the Planets</p>
+</div>
+
+
+</html>

@@ -1,0 +1,40 @@
+<html>
+<style>
+td{
+text-align: center;
+}
+</style>
+ <script>
+ 
+ function check(){
+	 var a = document.getElementById("num1").value;
+	 
+	switch(a)
+	{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			document.getElementById("dis").innerHTML = "Vowel";
+			break;
+		default:
+			document.getElementById("dis").innerHTML = "Consonant";
+			
+	}
+
+ }
+ </script>
+ <p> enter any letter </p>
+ <input type = "text" id = "num1" placeholder = "enter the respective number to get the day"> 
+  <button type = "button" onclick = "check()">check</button>
+ <p id = "dis">---</p>
+ 
+</html>
+
+

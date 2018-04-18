@@ -1,0 +1,47 @@
+
+if (condition)
+ {
+  ---
+  ----
+   ---
+ }
+
+
+if (condition)
+{
+bloxk 1
+}
+else
+{
+ block2
+}
+
+
+if (conditon)
+{
+ 
+}
+else if(condition)
+{
+}
+
+else if()
+{
+}
+
+else{
+}
+
+
+
+
+switch()
+{
+case 1:
+-----
+break;
+
+case
+}
+
+

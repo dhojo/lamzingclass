@@ -6,3 +6,6 @@
 3. fadeIn()/fadeOut()/fadeToggle()
 
 4. animate()
+
+
+study
